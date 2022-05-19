@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserve Flight Tickets</title>
+</head>
+<body>
+<style>
+*{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            text-align: center;
+            background-color: burlywood;
+            padding: 25px;
+            width: 100%;
+        }
+         .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 88vh;
+            background-color: aqua;
+        }
+          .container{
+            padding: 25px;
+            background-color: rgb(161, 139, 139);
+        }
+         .item{
+            margin: 10px;
+        }
+          .row1{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .row2{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+         .item{
+            margin: 10px;
+        }
+         label{
+            color: rgb(9, 9, 9);
+            margin: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        input{
+            padding: 7px;
+            border: 2px solid black;
+            border-radius: 10px;
+            outline: none;
+            margin: 10px;
+        }
+
+
+
+
+</style>
+<div class="header">
+        <h2>Reservation</h2>
+    </div>
+<div class="main">
+        <!-- <form> -->
+            <div class="container">
+                <div class="row1">
+                    <div class="item">
+                    <div>
+                        <label for="Userid">User Id: </label>
+                    </div>
+                    <div >
+                        <input type="text" placeholder="Enter User Id...">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <label for="flight id">Flight id: </label>
+                    </div>
+                    <div >
+                        <input type="text" placeholder="Enter Flight id...">
+                    </div>
+                </div>
+                </div>
+              
+                
+                 <div class="row2">
+                    <div class="item">
+                    <div>
+                        <label for="DOJ">DOJ:</label>
+                    </div>
+                    <div >
+                        <input type="date">
+                    </div>
+                </div>
+                
+                <div class="item">
+                        <div>
+                            <label for="No of Seats">No of Seats: </label>
+                        </div>
+                        <div >
+                            <input type="text" placeholder="Null">
+                        </div>
+                    </div>
+
+                </div>
+                
+                   <div class="row1">
+                    <div class="item">
+                        <div>
+                            <label for="Seat number">Seat number:</label>
+                        </div>
+                        <div >
+                            <input type="text" placeholder="Null">
+                        </div>
+                    </div>
+                    
+                     <div class="item">
+                        <div>
+                            <label for="Reservation type">Reservation Type: </label>
+                        </div>
+                        <div >
+                            <input type="text" placeholder="Null">
+                        </div>
+                    </div>
+
+                </div>
+                
+      <div class="row1">
+      <div class="item">
+      <div>  <input type="button" value="reserve"> </div>
+      </div>
+      
+      
+      
+       </div>
+                   </div>
+                   
+                   </div>
+                   
+                    
+</body>
+</html>

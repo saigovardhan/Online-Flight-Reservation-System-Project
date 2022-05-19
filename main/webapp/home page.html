@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+</head>
+<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+.nav{
+display:flex;
+align-items:centre;
+text-align:centre;
+justify-content:space-between;
+padding:30px;
+background-color:orange;
+width:100%; 
+}
+.hel{
+display:flex;
+align-items:centre;
+text-align:centre;
+justify-content:space-between;
+padding:25px;
+background-color:blue;
+width:100%; }
+.form{
+
+display: flex;
+background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  
+}
+label{
+font-size:27px;
+display:inline-block;
+color:white;
+
+}
+.form input{
+
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size:20px;
+  
+  }
+.container{
+display:block;
+border:5px solid black;
+background-color:magenta;
+margin:25px;
+}
+.item{
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding: 12px;
+width:100%;}
+</style>
+<div class="nav"> <h2> Flight reservation system</h2>
+<h2> Logout</h2></div>
+<div class="hel"> <a href="flightdetails.html"><h3> view flight</h3></a>
+ <a href="reservetickets.html"> <h3>reserve flight details </h3></a>
+ <h3> cancel flight tickets</h3>
+ <h3> make payment online</h3>
+ <h3> print flight ticket</h3>
+ <h3> quit session</h3></div>
+ 
+ <div class ="form"> <div class="container"> <form action="">
+ <div class="item"> <label> user id:</label>
+ <input type="text" placeholder="your id..."> </div>
+ <div class="item"> <label>  first name:</label>
+ <input type="text" placeholder="your first name..."> </div>
+ <div class="item" > <label> last name:</label>
+ <input type="text" placeholder="your last name..."> </div>
+ <div class="item"> <label> E-mail:</label>
+ <input type="email" placeholder="xyz@gmail.com"> </div>
+ <div class="item"> <label> Gender:</label>
+ <input type="text" placeholder="your gender..."> </div>
+ <div class="item"> <label> phone number:</label>
+ <input type="tel" placeholder="your contact number ..."> </div>
+ <div class="item"> <label> address:</label>
+ <input type="text" placeholder="your address..."> </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ </form>  </div>
+ </div>
+ 
+</body>
+</html>

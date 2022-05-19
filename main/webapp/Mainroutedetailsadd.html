@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Route details</title>
+</head>
+     
+     <body bgcolor="cyan"><br><br><br>
+     <style>
+table{
+	margin: 0% 35%;
+	
+	width: 50%;
+	border-spacing: 0px;
+	align: center;
+	display: inline-block;
+}
+th{
+	border-bottom: Solid 2px black;
+
+}
+td{
+	border: Solid 2px black;
+	border-top: 0px;
+	border-bottom: 0px;
+	padding: 7px 10px;
+}
+td#t01{
+	padding:7px 17%;
+	border-bottom: Solid 2px black;
+}
+
+
+input[type=text]{
+  width: 100%;
+}
+input[type=password]{
+  width: 100%;
+}
+input[type=submit]{
+  width: 100%;
+}
+input[type=reset]{
+  width: 100%;
+}
+</style>
+
+<table>
+		<tr><th>Route Details</th><tr>
+		<tr>
+		<td>
+		<form action="http://localhost:7654/weball/messageSuccessfullyadd.html" method="post">
+			Route id :<input type="text" name="name">
+			<br><br>
+			Route name :<input type="text" name="uname">
+			<br><br>
+			<tr>
+ 			<td id="t01">
+ 			<input type="submit" value="Add" align="center"><br><br>
+ 			<a href="http://localhost:7654/weball/Edit%20pages.html">Edit routes details</a><br><br>
+ 			<a href="http://localhost:7654/weball/Deleteroutedetails.html">Delete route details</a>
+			</td>
+			</tr>
+		</form>
+		</td>
+		</tr>
+</table>
+     
+     
+     
+     
+     
+
+</body>
+</html>
+

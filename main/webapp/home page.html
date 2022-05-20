@@ -1,105 +1,104 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home Page</title>
-</head>
-<body>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../webapp/index.css" />
+    <title>Home Page</title>
+  </head>
+  <body class="h-full">
+    <nav class="navbar"></nav>
+    <script>
+      function toggle() {
+        const style = document.getElementById("mobileMenu").value;
+        if (style === "hidden") {
+          document.getElementById("mobileMenu").style.display = "block";
+          document.getElementById("mobileMenu").value = "block";
+        }
+        if (style === "block") {
+          document.getElementById("mobileMenu").style.display = "none";
+          document.getElementById("mobileMenu").value = "hidden";
+        }
+        console.log(style);
+      }
+    </script>
+    <script defer src="../webapp/js/NabBar.js"></script>
 
-    scroll-behavior: smooth;
-}
-.nav{
-display:flex;
-align-items:centre;
-text-align:centre;
-justify-content:space-between;
-padding:30px;
-background-color:orange;
-width:100%; 
-}
-.hel{
-display:flex;
-align-items:centre;
-text-align:centre;
-justify-content:space-between;
-padding:25px;
-background-color:blue;
-width:100%; }
-.form{
+    <div
+      class="bg-gray-900 w-full h-full p-5 sm:py-12 font-medium sm:font-bold text-gray-700 items-center justify-center flex flex-col"
+    >
+      <div class="w-11/12 flex flex-col items-center justify-center mx-2 my-4">
+        <div
+          class="header text-center w-full hover:from-pink-500 hover:to-indigo-500 p-4 m-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-md sm:text-3xl font-bold rounded-lg text-gray-100"
+        >
+          <h2>Schedule Details</h2>
+        </div>
 
-display: flex;
-background-color: yellow;
-  justify-content: center;
-  align-items: center;
-  
-}
-label{
-font-size:27px;
-display:inline-block;
-color:white;
-
-}
-.form input{
-
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  font-size:20px;
-  
-  }
-.container{
-display:block;
-border:5px solid black;
-background-color:magenta;
-margin:25px;
-}
-.item{
-display:flex;
-align-items:center;
-justify-content:space-around;
-padding: 12px;
-width:100%;}
-</style>
-<div class="nav"> <h2> Flight reservation system</h2>
-<h2> Logout</h2></div>
-<div class="hel"> <a href="flightdetails.html"><h3> view flight</h3></a>
- <a href="reservetickets.html"> <h3>reserve flight details </h3></a>
- <h3> cancel flight tickets</h3>
- <h3> make payment online</h3>
- <h3> print flight ticket</h3>
- <h3> quit session</h3></div>
- 
- <div class ="form"> <div class="container"> <form action="">
- <div class="item"> <label> user id:</label>
- <input type="text" placeholder="your id..."> </div>
- <div class="item"> <label>  first name:</label>
- <input type="text" placeholder="your first name..."> </div>
- <div class="item" > <label> last name:</label>
- <input type="text" placeholder="your last name..."> </div>
- <div class="item"> <label> E-mail:</label>
- <input type="email" placeholder="xyz@gmail.com"> </div>
- <div class="item"> <label> Gender:</label>
- <input type="text" placeholder="your gender..."> </div>
- <div class="item"> <label> phone number:</label>
- <input type="tel" placeholder="your contact number ..."> </div>
- <div class="item"> <label> address:</label>
- <input type="text" placeholder="your address..."> </div>
- 
- 
- 
- 
- 
- 
- </form>  </div>
- </div>
- 
-</body>
+        <div class="form w-full bg-gray-200 rounded-lg shadow-lg p-4 sm:p12>
+          <div class="container">
+            <form action="">
+              <div class="item">
+                <label> user id:</label>
+                <input
+                  type="text"
+                  placeholder="your id..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> first name:</label>
+                <input
+                  type="text"
+                  placeholder="your first name..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> last name:</label>
+                <input
+                  type="text"
+                  placeholder="your last name..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> E-mail:</label>
+                <input
+                  type="email"
+                  placeholder="xyz@gmail.com"
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> Gender:</label>
+                <input
+                  type="text"
+                  placeholder="your gender..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> phone number:</label>
+                <input
+                  type="tel"
+                  placeholder="your contact number ..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+              <div class="item">
+                <label> address:</label>
+                <input
+                  type="text"
+                  placeholder="your address..."
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

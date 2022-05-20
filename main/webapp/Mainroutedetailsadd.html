@@ -1,76 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Route details</title>
-</head>
-     
-     <body bgcolor="cyan"><br><br><br>
-     <style>
-table{
-	margin: 0% 35%;
-	
-	width: 50%;
-	border-spacing: 0px;
-	align: center;
-	display: inline-block;
-}
-th{
-	border-bottom: Solid 2px black;
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../webapp/index.css" />
+    <title>Add Main Route Details</title>
+  </head>
 
-}
-td{
-	border: Solid 2px black;
-	border-top: 0px;
-	border-bottom: 0px;
-	padding: 7px 10px;
-}
-td#t01{
-	padding:7px 17%;
-	border-bottom: Solid 2px black;
-}
+  <body class="h-full">
+    <nav class="navbar"></nav>
+    <script defer src="../webapp/js/NabBar.js"></script>
+    <script>
+      function toggle() {
+        const style = document.getElementById("mobileMenu").value;
+        if (style === "hidden") {
+          document.getElementById("mobileMenu").style.display = "block";
+          document.getElementById("mobileMenu").value = "block";
+        }
+        if (style === "block") {
+          document.getElementById("mobileMenu").style.display = "none";
+          document.getElementById("mobileMenu").value = "hidden";
+        }
+        console.log(style);
+      }
+    </script>
 
+    <!--
+    <style>
+      table {
+        margin: 0% 35%;
 
-input[type=text]{
-  width: 100%;
-}
-input[type=password]{
-  width: 100%;
-}
-input[type=submit]{
-  width: 100%;
-}
-input[type=reset]{
-  width: 100%;
-}
-</style>
+        width: 50%;
+        border-spacing: 0px;
+        align: center;
+        display: inline-block;
+      }
 
-<table>
-		<tr><th>Route Details</th><tr>
-		<tr>
-		<td>
-		<form action="http://localhost:7654/weball/messageSuccessfullyadd.html" method="post">
-			Route id :<input type="text" name="name">
-			<br><br>
-			Route name :<input type="text" name="uname">
-			<br><br>
-			<tr>
- 			<td id="t01">
- 			<input type="submit" value="Add" align="center"><br><br>
- 			<a href="http://localhost:7654/weball/Edit%20pages.html">Edit routes details</a><br><br>
- 			<a href="http://localhost:7654/weball/Deleteroutedetails.html">Delete route details</a>
-			</td>
-			</tr>
-		</form>
-		</td>
-		</tr>
-</table>
-     
-     
-     
-     
-     
+      th {
+        border-bottom: Solid 2px black;
+      }
 
-</body>
+      td {
+        border: Solid 2px black;
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 7px 10px;
+      }
+
+      td#t01 {
+        padding: 7px 17%;
+        border-bottom: Solid 2px black;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+
+      input[type="password"] {
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+      }
+
+      input[type="reset"] {
+        width: 100%;
+      }
+    </style>
+
+	-->
+
+    <div
+      class="bg-gray-900 w-full h-full p-5 sm:py-12 font-medium sm:font-bold text-gray-700 items-center justify-center flex flex-col"
+    >
+      <div class="w-11/12 flex flex-col items-center justify-center mx-2 my-4">
+        <div
+          class="header text-center w-11/12 hover:from-pink-500 hover:to-indigo-500 p-4 m-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-md sm:text-3xl font-bold rounded-lg text-gray-100"
+        >
+          Route Details
+        </div>
+        <table
+          class="table-auto w-11/12 bg-gray-200 font-medium sm:font-bold text-md sm:text-xl p-4 rounded-lg backdrop-opacity-95 backdrop-invert bg-white/30"
+        >
+          <tr>
+            <th>Route Details</th>
+          </tr>
+
+          <tr></tr>
+          <tr>
+            <td>
+              <form
+                class="p-12 sm:p-6 flex flex-col sm:flex-row items-center justify-around"
+                action="http://localhost:7654/weball/messageSuccessfullyadd.html"
+                method="post"
+              >
+                Route id :<input
+                  type="text"
+                  name="name"
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-auto sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+                <br /><br />
+                Route name :<input
+                  type="text"
+                  name="uname"
+                  class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-auto sm:text-sm border-gray-300 rounded-md py-2 px-2"
+                />
+                <br /><br />
+                <tr>
+                  <td id="t01" class="flex w-full items-center justify-around">
+                    <input
+                      type="submit"
+                      value="Add "
+                      class="w-1/4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      align="center"
+                    /><br /><br />
+
+                    <a
+                      href="http://localhost:7654/weball/Edit%20pages.html"
+                      class="w-1/4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Edit</a
+                    ><br /><br />
+                    <a
+                      href="http://localhost:7654/weball/Deleteroutedetails.html"
+                      class="w-1/4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Delete
+                    </a>
+                  </td>
+                </tr>
+              </form>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
-

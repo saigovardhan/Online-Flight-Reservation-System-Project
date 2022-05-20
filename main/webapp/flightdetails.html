@@ -12,6 +12,22 @@
 
 <body class="h-full">
   <nav class="navbar"></nav>
+  <script>
+    function toggle() {
+      const style = document.getElementById("mobileMenu").value;
+      if (style === "hidden") {
+        document.getElementById("mobileMenu").style.display = "block";
+        document.getElementById("mobileMenu").value = "block";
+      }
+      if (style === "block") {
+        document.getElementById("mobileMenu").style.display = "none";
+        document.getElementById("mobileMenu").value = "hidden";
+      }
+      console.log(style);
+    }
+  </script>
+<script defer src="../webapp/js/NabBar.js"></script>
+
   <script type="text/javascript">
     function moreFields() {
       alert("The text will be show");
@@ -138,219 +154,6 @@
   </main>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .header{
-            text-align: center;
-            background-color: burlywood;
-            padding: 25px;
-            width: 100%;
-        }
-
-        .main{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 88vh;
-            background-color: aqua;
-        }
-        .container{
-            padding: 25px;
-            background-color: rgb(161, 139, 139);
-        }
-
-        .row1{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-        .row2{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .item{
-            margin: 10px;
-        }
-        label{
-            color: rgb(9, 9, 9);
-            margin: 10px;
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-        input{
-            padding: 7px;
-            border: 2px solid black;
-            border-radius: 10px;
-            outline: none;
-            margin: 10px;
-        }
-
-        #btn{
-            color: white;
-            background-color: rgb(28, 184, 83);
-            padding: 10px;
-            border-radius: 0;
-            width: 150px;
-            cursor: pointer;
-            margin-top: 30px;
-            margin-right: 50px;
-        }
-
-        #btn:hover{
-            background-color: aqua;
-            display: block;
-        }
-
-        #hide{
-            display: none;
-        }
-
-    </style>
-
-    -->
-
-
-
-  <!--
-    <nav class="navbar"></nav>
-    <script type="text/javascript">
-      function moreFields() {
-        alert("The text will be show");
-      }
-    </script>
-
-    <div class="header">
-      <h2>Schedule Details</h2>
-    </div>
-
-    <div class="main">
-      <!-- <form> -->
-  <!--
-        <div class="container">
-        <div class="row1">
-          <div class="item">
-            <div>
-              <label for="flightid">Flight Id: </label>
-            </div>
-            <div>
-              <input type="text" placeholder="Enter Flight Id..." />
-            </div>
-          </div>
-
-          <div class="item">
-            <div>
-              <label for="flightname">Flight Name: </label>
-            </div>
-            <div>
-              <input type="text" placeholder="Enter Flight Name..." />
-            </div>
-          </div>
-        </div>
-
-        <div class="row2">
-          <div class="item">
-            <div>
-              <label for="date">Date:</label>
-            </div>
-            <div>
-              <input type="date" />
-            </div>
-          </div>
-
-          <div class="item">
-            <input id="btn" type="submit" value="View" onclick="myfunc()" />
-          </div>
-        </div>
-
-        <div id="hide">
-          <div class="row1">
-            <div class="item">
-              <div>
-                <label for="flightid">Flight Id: </label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div>
-                <label for="flightname">Flight Name: </label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row1">
-            <div class="item">
-              <div>
-                <label for="source">Source:</label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div>
-                <label for="destination">Destination: </label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-          </div>
-
-          <div class="row1">
-            <div class="item">
-              <div>
-                <label for="duration">Duration:</label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-
-            <div class="item">
-              <div>
-                <label for="destination">Date: </label>
-              </div>
-              <div>
-                <input type="text" placeholder="Null" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- </form> -->
   </div>
   <script>
     function myfunc() {
@@ -358,22 +161,8 @@
     }
   </script>
 
-  <script>
-    function toggle() {
-      const style = document.getElementById("mobileMenu").value;
-      if (style === "hidden") {
-        document.getElementById("mobileMenu").style.display = "block";
-        document.getElementById("mobileMenu").value = "block";
-      }
-      if (style === "block") {
-        document.getElementById("mobileMenu").style.display = "none";
-        document.getElementById("mobileMenu").value = "hidden";
-      }
-      console.log(style);
-    }
-  </script>
+
 </body>
 
-<script defer src="../webapp/js/NabBar.js"></script>
 
 </html>

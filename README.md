@@ -53,4 +53,4 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 
 ---
 
-Feel free to use this README as a template for your project. Customize the content to provide accurate information about your Online Flight Reservation System project. Good luck and happy coding!
+Good luck and happy coding!
